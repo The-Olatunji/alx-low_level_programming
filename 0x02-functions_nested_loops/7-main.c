@@ -11,8 +11,8 @@ int main(void)
 
 	r = print_last_digit(-393232);
 	_putchar('0' + r);
-	r = print_last_digit(39);
-	r = print_last_digit(1111390);
+	print_last_digit(39);
+	print_last_digit(1111390);
 	_putchar('\n');
 	return (0);
 }

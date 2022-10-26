@@ -5,7 +5,7 @@
   *@n: integer
   *
   */
-void _putchar(int *n)
+void _putchar(int n)
 {
-	putchar(*n);
+	putchar(n);
 }

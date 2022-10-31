@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
    *_strstr - locates a substring within a string

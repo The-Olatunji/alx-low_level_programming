@@ -8,12 +8,12 @@
   */
 int main(int argc, char **argv)
 {
-	int i, sum = 0;
+	int i, sum = 0, ret_val = 0;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
-		exit(EXIT_FAILURE);
+		ret_val = 1;
 	}
 	else
 	{
@@ -23,5 +23,5 @@ int main(int argc, char **argv)
 		}
 		printf("%d\n", sum);
 	}
-	exit(EXIT_SUCCESS);
+	return (ret_val);
 }

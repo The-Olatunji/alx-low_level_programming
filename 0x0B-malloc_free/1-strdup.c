@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
-  *strdup - copy or duplicate a string to a newly allocated memory
+  *_strdup - copy or duplicate a string to a newly allocated memory
   *@str: a pointer to string
   *Return: a char pointer to a new string which is a duplicate of *str
   */
@@ -12,7 +12,7 @@ char *_strdup(char *str)
 	char *ns;
 	size_t n;
 
-	for (n = 0; str[n] != '\0'; n ++)
+	for (n = 0; str[n] != '\0'; n++)
 	{
 		n++;
 	}

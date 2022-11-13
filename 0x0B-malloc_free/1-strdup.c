@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 #include <stdlib.h>
 /**
   *_strdup - copy or duplicate a string to a newly allocated memory
@@ -10,14 +11,8 @@ char *_strdup(char *str)
 	size_t i;
 	size_t len;
 	char *ns;
-	size_t n;
 
-	for (n = 0; str[n] != '\0'; n++)
-	{
-		n++;
-	}
-
-	len = n + 1;
+	len = strlen(str) + 1;
 	ns = malloc((len + 1) * sizeof(char));
 	i = 0;
 	if (ns != NULL)

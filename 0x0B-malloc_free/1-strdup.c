@@ -29,5 +29,9 @@ char *_strdup(char *str)
 		}
 		ns[i] = '\0';
 	}
+	else
+	{
+		return (NULL);
+	}
 	return (ns);
 }

@@ -29,7 +29,7 @@ char *_strdup(char *str)
 		}
 		ns[i] = '\0';
 	}
-	else
+	if (ns == NULL)
 	{
 		return (NULL);
 	}

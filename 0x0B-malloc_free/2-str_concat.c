@@ -19,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 		for (; s1[i] != '\0'; i++)
 		;
 	}
-	if (s1 == NULL)
+	else
 	{
 		 s1 = "";
 	}
@@ -30,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	if (s2 == NULL)
 	{
-		s2[0] = '\0';
+		s2 = "";
 	}
 
 
@@ -41,9 +41,7 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 	for (x = 0; s1[x] != '\0'; x++)
-	{
 		ns[x] = s1[x];
-	}
 	for (; s2[count] != '\0'; x++)
 	{
 		ns[x] = s2[count];

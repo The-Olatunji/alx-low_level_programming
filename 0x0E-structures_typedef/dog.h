@@ -3,7 +3,7 @@
 /**
   *struct dog - a dog structure
   *@name: first prop
-  *@float: second prop
+  *@age: second prop
   *@owner: third
   */
 

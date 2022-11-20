@@ -1,6 +1,5 @@
 #include "dog.h"
 #include <stdio.h>
-#include <stdlib.h>
 /**
   *print_dog - print out various variable of type Struct dog
   *@d: a Struct

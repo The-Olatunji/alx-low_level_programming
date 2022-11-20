@@ -17,8 +17,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	char *temp_owner;
 
 	bingo = malloc(sizeof(dog_t));
-	temp_name = malloc(sizeof(char) * (strlen(name) + 1));
-	temp_owner = malloc(sizeof(char) * (strlen(name) + 1));
+	temp_name = malloc(sizeof(*name) * (strlen(name) + 1));
+	temp_owner = malloc(sizeof(*owner) * (strlen(name) + 1));
 	if (bingo && temp_name && temp_owner)
 	{
 		strcpy(temp_name, name);
@@ -36,5 +36,4 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	return (bingo);
-	free (bingo);
 }
